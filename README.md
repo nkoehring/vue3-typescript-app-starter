@@ -18,7 +18,7 @@ It uses Vue3 beta, typescript and webpack and supports some neat features:
 
 ![lighthouse score](./lighthouse-score.jpg)
 
-See for your self [on lighthouse](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvue3-app-starter.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo)
+See for yourself [on lighthouse](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvue3-app-starter.netlify.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo)
 
 ## Contributing
 
