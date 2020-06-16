@@ -1,0 +1,20 @@
+{
+  "title": "RPG-Cards-ng",
+  "meta": {
+    "viewport": "width=device-width,initial-scale=1.0"
+  },
+  "logo": "./src/assets/logo.svg",
+  "favicons": {
+    "icons": {
+      "favicons": true,
+      "android": true,
+      "appleIcon": true,
+      "appleStartup": false,
+      "coast": false,
+      "firefox": false,
+      "yandex": false,
+      "windows": false
+    }
+  },
+  "template": "./public/index.html"
+}
