@@ -3,16 +3,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from "vue"
+import { defineComponent } from "vue"
 
 export default defineComponent({
   props: {
     url: String,
     newWindow: Boolean
   },
-  setup (props) {
-    return {
-      target: computed(() => props.newWindow ? '_blank' : '_self')
+  computed: {
+    target ():string {
+      return this.newWindow ? '_blank' : '_self'
     }
   }
 })
