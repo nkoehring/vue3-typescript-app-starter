@@ -21,8 +21,8 @@ module.exports = (env = {}) => ({
   optimization: {
     splitChunks: {
       chunks: 'async',
-      minSize: 20000,
-      maxSize: 40000
+      minSize: 32000,
+      maxSize: 48000
     }
   },
   module: {
