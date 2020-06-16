@@ -1,7 +1,8 @@
 {
-  "title": "RPG-Cards-ng",
+  "title": "vue3-app-starter",
   "meta": {
-    "viewport": "width=device-width,initial-scale=1.0"
+    "viewport": "width=device-width,initial-scale=1.0",
+    "description": "vue3 app starter with typescript support"
   },
   "logo": "./src/assets/logo.svg",
   "favicons": {
