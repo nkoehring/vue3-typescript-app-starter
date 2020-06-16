@@ -1,19 +1,21 @@
 const pkg = require('./package.json')
 const { resolve } = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const SriPlugin = require('webpack-subresource-integrity')
 
 const htmlConfig = require('./html.config.json') || {}
+const outputPath = resolve(__dirname, './dist')
+const publicPath = resolve(__dirname, './public')
 
 module.exports = (env = {}) => ({
   mode: env.prod ? 'production' : 'development',
   devtool: env.prod ? false : 'eval-source-map',
   entry: resolve(__dirname, './src/main.ts'),
   output: {
-    path: resolve(__dirname, './dist'),
-    publicPath: '/',
+    path: outputPath,
     crossOriginLoading: 'anonymous'
   },
   optimization: {
@@ -63,6 +65,9 @@ module.exports = (env = {}) => ({
   },
   plugins: [
     new VueLoaderPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [{ from: publicPath, to: outputPath }]
+    }),
     new HtmlWebpackPlugin({
       title: htmlConfig.title || pkg.name,
       meta: htmlConfig.meta || {},
