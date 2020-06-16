@@ -6,11 +6,7 @@ html,body {
   font-family: Helvetica, Arial, sans;
 }
 
-nav {
-  list-style-type: none;
-}
-
-nav > li {
-  display: inline-block;
-  margin: 1em .2em;
+header {
+  display: block;
+  line-height: 4em;
 }

@@ -1,15 +1,10 @@
 <template>
   <header>
-    <nav>
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
-    </nav>
+    <router-link to="/">Home</router-link>
+    |
+    <router-link to="/about">About</router-link>
   </header>
-  <img id="logo" src="@/assets/logo.svg" />
+  <img id="logo" alt="Vue Logo" src="@/assets/logo.svg" />
   <router-view />
 </template>
 
